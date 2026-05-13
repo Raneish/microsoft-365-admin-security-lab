@@ -41,19 +41,22 @@ Microsoft Teams governance and meeting policies
 Business Context
 
 In a production environment, helpdesk teams manage the full user lifecycle from onboarding through offboarding. Secure identity management ensures appropriate access control, licensing allocation, and account protection.
-
 MFA is a core security control used to reduce the risk of credential compromise.
+
 **What I Did**
 Provisioned user accounts with role-appropriate Microsoft 365 licence assignments
 Created a secondary Global Administrator account to prevent a single point of failure
 Configured a break-glass emergency administrator account excluded from Conditional Access MFA policies
 
-Evidence**
-**
+**Evidence**
+<img width="1346" height="591" alt="Figure 1-Active users" src="https://github.com/user-attachments/assets/fb264089-4e60-42a1-b511-d22f7fa40e83" />
 Figure 1: Shows active Microsoft 365 users, including the configured break-glass emergency administrator account.
+![Figure 1 - Active Users](images/figure1-active-users.png)
 
+<img width="792" height="383" alt="Figure 2 Shows MFA being enabled for selected users during testing" src="https://github.com/user-attachments/assets/0726c9d1-b30b-4e6e-b118-488db646035f" />
 Figure 2: Shows MFA being enabled for selected users during testing.
 
+<img width="1081" height="892" alt="Figure 3 Shows the Conditional Access policy configured to enforce MFA while excluding administrator and break-glass accounts" src="https://github.com/user-attachments/assets/7088cb9a-0a92-479e-9243-fdfc746f0799" />
 Figure 3: Shows the Conditional Access policy configured to enforce MFA while excluding administrator and break-glass accounts.
 
 Figure 4: Shows all authentication methods enabled within the tenant.
