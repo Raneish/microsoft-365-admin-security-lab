@@ -1,4 +1,4 @@
-# microsoft-365-admin-security-lab
+# Microsoft 365 Administration & Security Lab
 Microsoft 365 administration lab covering Entra ID, Intune, Exchange Online, SharePoint, and Teams governance.
 
 Microsoft 365 | Entra ID | Intune | Exchange Online | SharePoint | Teams
@@ -32,9 +32,9 @@ Microsoft Teams governance and meeting policies
 | Security          | Legacy Authentication Blocking, Geo-restriction, Security Policies |
 
 **Environment Specifications**
-Microsoft 365 Business Standard
-Microsoft Entra ID P1 Trial
-Microsoft Intune
+- Microsoft 365 Business Standard
+- Microsoft Entra ID P1 Trial
+- Microsoft Intune
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **TASK 01 — User Account Management**
@@ -67,7 +67,7 @@ Outcome
 User accounts were provisioned with appropriate licensing and access controls to reflect standard onboarding and access management practices. MFA was enforced for standard users through Conditional Access, while emergency tenant recovery access was maintained through a documented break-glass account.
 
 
-
+-----------------------------------------------------------------------------------------
 **TASK 02 — Device Management & Endpoint Security (Microsoft Intune)**
 Business Context
 
@@ -123,7 +123,174 @@ Figure 13: Shows USB storage restrictions being configured.
 
 Figure 14: Shows completed Windows security configuration profile.
 
+Outcome
+Security settings are applied consistently across managed devices through Intune configuration profiles.
 
+**TASK 03 — Conditional Access Policies**
+Business Context
+
+Conditional Access acts as a policy engine at the identity layer, evaluating access requests based on user, device, location, and session conditions.
+
+**What I Did**
+Created policies to block legacy authentication protocols:
+SMTP
+POP
+IMAP
+MAPI
+Enforced MFA for:
+Azure Management access
+Administrator roles
+Restricted access to compliant managed devices only
+Configured sign-in frequency controls
+Evidence
+
+Figure 16: Shows configured Conditional Access policies.
+
+Outcome
+
+Conditional Access policies were implemented to strengthen identity security by blocking legacy authentication, enforcing MFA for privileged access, and restricting access to compliant devices.
+
+**TASK 04 — Exchange Online Mail Flow Management**
+Business Context
+
+Mail flow rules support secure communication, regulatory compliance, and email threat reduction.
+
+**What I Did**
+Created a disclaimer rule appending legal text and corporate signatures to outgoing mail
+Configured urgent email forwarding to IT support mailbox
+Blocked oversized external attachments
+Blocked executable attachments (.exe, .bat, .cmd)
+Evidence
+
+Figure 15: Shows configured mail flow rules.
+
+Figure 16: Shows disclaimer rule configuration.
+
+Figure 17: Shows urgent email forwarding rule.
+
+Figure 18: Shows attachment size restriction rule.
+
+Figure 19: Shows executable attachment blocking rule.
+
+Outcome
+Mail flow rules were configured to improve email governance, route urgent support requests, and reduce exposure to malicious attachments.
+
+**TASK 05 — Microsoft Teams Governance
+Business Context**
+
+Teams governance supports controlled communication standards and meeting security.
+
+**What I Did**
+Created messaging policies restricting:
+GIFs
+Memes
+Message deletion permissions
+Configured meeting policies restricting:
+Lobby bypass
+Recording permissions
+Evidence
+
+Figure 20: Shows Teams messaging policy settings.
+
+Figure 21: Shows Teams meeting policy settings.
+
+Outcome
+Teams policies were configured to support controlled communication standards and meeting governance.
+
+**Direct Routing Exploration**
+**What I Did**
+Explored Teams Direct Routing configuration for PSTN telephony integration
+Evidence
+
+Figure 22: Shows Direct Routing configuration area.
+
+Outcome
+Direct Routing functionality was explored to understand Teams telephony integration and unified communications capabilities.
+
+**TASK 06 — Shared Mailboxes, Groups & Access Management
+Business Context**
+
+Shared mailboxes and groups improve communication efficiency and simplify access management.
+
+What I Did
+Created a shared mailbox for IT support
+Created a Sales distribution list
+Configured security groups for IT users and devices
+Evidence
+
+Figure 23: Shows IT support shared mailbox.
+
+Figure 24: Shows group configuration.
+
+Outcome
+Shared mailboxes and groups were configured to support team communication and centralised access management.
+
+**TASK 07 — SharePoint Administration**
+Business Context
+
+SharePoint enables structured collaboration, document management, and internal communication.
+
+**What I Did**
+Created:
+IT Team Site
+Communication Site
+Configured:
+Owner permissions
+Member permissions
+Visitor permissions
+Built document libraries for IT documentation storage
+Evidence
+
+Figure 25: Shows SharePoint Team Site.
+
+Figure 26: Shows SharePoint permissions configuration.
+
+Outcome
+SharePoint sites and permissions were configured to support collaboration, communication, and access control.
+
+**TASK 08 — Message Trace & Email Investigation**
+Business Context
+
+Message trace supports troubleshooting, audit readiness, and email investigation.
+
+**What I Did**
+Reviewed message trace functionality to analyse:
+Delivery status
+Mail flow rule actions
+Filtering decisions
+Timestamps
+Evidence
+
+Figure 27: Shows message trace reporting.
+
+Outcome
+Message trace functionality was reviewed to understand email troubleshooting, delivery analysis, and audit support capabilities.
+
+**Skills Demonstrated**
+- Microsoft 365 Administration
+- Microsoft Entra ID
+- Azure AD
+- Identity & Access Management
+- Conditional Access
+- Multi-Factor Authentication
+- Exchange Online
+- Mail Flow Rules
+- Shared Mailboxes
+- Microsoft Intune
+- Windows Autopilot
+- Endpoint Compliance
+- SharePoint Administration
+- Microsoft Teams Governance
+- Security Policy Enforcement
+- IT Documentation
+
+**Key Learning Outcomes**
+Through this project, I strengthened practical understanding of:
+Identity and access management in Microsoft 365
+Endpoint security and compliance management
+Cloud administration workflows
+Security policy enforcement
+IT operational documentation
 
 
 
