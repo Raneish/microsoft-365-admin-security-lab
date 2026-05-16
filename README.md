@@ -440,9 +440,9 @@ Through this project, I strengthened practical understanding of:
 - IT operational documentation
 
 
-**Author
-Raneish Chambers
-Aspiring IT Support / Helpdesk **
+*Author*
+*Raneish Chambers*
+*Aspiring IT Support / Helpdesk*
 
 
 
